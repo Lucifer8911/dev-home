@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Santhosh Dev Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+min-height:100vh;
+background:linear-gradient(135deg,#020024,#090979,#00d4ff);
+display:flex;
+justify-content:center;
+align-items:center;
+color:#fff;
+padding:20px;
+}
+
+.container{
+width:100%;
+max-width:480px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(25px);
+border-radius:22px;
+padding:25px;
+box-shadow:0 25px 50px rgba(0,0,0,0.5);
+}
+
+h1{
+text-align:center;
+margin-bottom:5px;
+}
+
+.subtitle{
+text-align:center;
+opacity:.7;
+margin-bottom:20px;
+font-size:14px;
+}
+
+.section{
+margin-bottom:18px;
+}
+
+.section h3{
+font-size:14px;
+margin-bottom:8px;
+opacity:.8;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+}
+
+.card{
+background:rgba(255,255,255,0.12);
+border-radius:14px;
+padding:12px 6px;
+text-align:center;
+cursor:pointer;
+transition:.25s;
+}
+
+.card:hover{
+background:rgba(255,255,255,0.22);
+transform:translateY(-3px);
+}
+
+.card i{
+font-size:22px;
+color:#4fd1ff;
+margin-bottom:5px;
+}
+
+.card span{
+font-size:11px;
+display:block;
+}
+
+.footer{
+text-align:center;
+font-size:11px;
+opacity:.6;
+margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>⚡ Santhosh Dev Hub</h1>
+<div class="subtitle">Build • Debug • Deploy</div>
+
+
+<!-- WEB DEV -->
+<div class="section">
+<h3>🌐 Web Development</h3>
+<div class="grid">
+
+<div class="card" onclick="go('https://github.com')">
+<i class="fab fa-github"></i><span>GitHub</span></div>
+
+<div class="card" onclick="go('https://stackoverflow.com')">
+<i class="fab fa-stack-overflow"></i><span>StackOF</span></div>
+
+<div class="card" onclick="go('https://developer.mozilla.org')">
+<i class="fab fa-firefox"></i><span>MDN</span></div>
+
+<div class="card" onclick="go('https://www.w3schools.com')">
+<i class="fa-solid fa-school"></i><span>W3</span></div>
+
+<div class="card" onclick="go('https://codepen.io')">
+<i class="fab fa-codepen"></i><span>CodePen</span></div>
+
+<div class="card" onclick="go('https://jsfiddle.net')">
+<i class="fa-solid fa-flask"></i><span>JSFiddle</span></div>
+
+</div>
+</div>
+
+
+<!-- APP DEV -->
+<div class="section">
+<h3>📱 App Development</h3>
+<div class="grid">
+
+<div class="card" onclick="go('https://developer.android.com')">
+<i class="fab fa-android"></i><span>Android</span></div>
+
+<div class="card" onclick="go('https://firebase.google.com')">
+<i class="fa-solid fa-fire"></i><span>Firebase</span></div>
+
+<div class="card" onclick="go('https://expo.dev')">
+<i class="fa-solid fa-mobile"></i><span>Expo</span></div>
+
+<div class="card" onclick="go('https://play.google.com/console')">
+<i class="fa-brands fa-google-play"></i><span>Play</span></div>
+
+</div>
+</div>
+
+
+<!-- TOOLS -->
+<div class="section">
+<h3>⚙️ Dev Tools</h3>
+<div class="grid">
+
+<div class="card" onclick="go('https://hoppscotch.io')">
+<i class="fa-solid fa-paper-plane"></i><span>API</span></div>
+
+<div class="card" onclick="go('https://regex101.com')">
+<i class="fa-solid fa-filter"></i><span>Regex</span></div>
+
+<div class="card" onclick="go('https://jsonformatter.org')">
+<i class="fa-solid fa-code"></i><span>JSON</span></div>
+
+<div class="card" onclick="go('https://www.postman.com')">
+<i class="fa-solid fa-vial"></i><span>Postman</span></div>
+
+</div>
+</div>
+
+
+<!-- DEPLOY -->
+<div class="section">
+<h3>🚀 Deploy / Cloud</h3>
+<div class="grid">
+
+<div class="card" onclick="go('https://vercel.com')">
+<i class="fa-solid fa-rocket"></i><span>Vercel</span></div>
+
+<div class="card" onclick="go('https://netlify.com')">
+<i class="fa-solid fa-cloud"></i><span>Netlify</span></div>
+
+<div class="card" onclick="go('https://railway.app')">
+<i class="fa-solid fa-train"></i><span>Railway</span></div>
+
+<div class="card" onclick="go('https://render.com')">
+<i class="fa-solid fa-server"></i><span>Render</span></div>
+
+</div>
+</div>
+
+
+<!-- AI -->
+<div class="section">
+<h3>🤖 AI / Help</h3>
+<div class="grid">
+
+<div class="card" onclick="go('https://chat.openai.com')">
+<i class="fa-solid fa-robot"></i><span>ChatGPT</span></div>
+
+<div class="card" onclick="go('https://copilot.github.com')">
+<i class="fa-solid fa-brain"></i><span>Copilot</span></div>
+
+<div class="card" onclick="go('https://www.perplexity.ai')">
+<i class="fa-solid fa-magnifying-glass"></i><span>Ask AI</span></div>
+
+</div>
+</div>
+
+
+<div class="footer">
+Dev Dashboard • v3.0
+</div>
+
+</div>
+
+
+<script>
+function go(url){
+window.location.href=url;
+}
+</script>
+
+</body>
+</html>
